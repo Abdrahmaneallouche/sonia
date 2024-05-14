@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap');
+body{
+  background: url('./image/view-3d-blooming-flowers.jpg');
+  background-position: center center;
+  background-repeat:repeat ;
+  font-family: "Poetsen One", sans-serif;
+  background-size: cover;
+  height: 100vh;
+}
+.sonia{
+/* From https://css.glass */
+/*.model{
+  opacity: 0;
+  z-index: -1;
+}From https://css.glass */
+background: rgba(156, 75, 237, 0.46);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(156, 75, 237, 0.3);
+}
+.model{
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.model.open{
+ opacity: 1;
+ z-index: 1000;
+}
